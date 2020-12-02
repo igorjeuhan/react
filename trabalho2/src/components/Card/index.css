@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  text-align: left;
+  width: 20%;
+  height: auto;
+  padding: 10px;
+  background-image: url('./bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  transform: scale(1.01);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.borda {
+  background-color: transparent;
+  border: 2px solid #fec92d;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: 'Texturina', serif;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  color: #fec92d;
+}
+
+span {
+  font-family: 'Texturina', serif;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+  }
+}
